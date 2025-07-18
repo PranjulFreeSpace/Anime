@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Anime Recommendation Quiz</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      background: #111;
+      color: #eee;
+    }
+    .step {
+      display: none;
+      margin-top: 20px;
+    }
+    .step.active {
+      display: block;
+    }
+    button {
+      margin: 5px;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+<button onclick="goTo('step1')">🔄 Restart</button>
+  <h1>Find Your Anime Recommendation</h1>
+
+  <div class="step active" id="step1">
+    <p>What are you in the mood for?</p>
+    <button onclick="goTo('step2a')">Spectacle</button>
+    <button onclick="goTo('step2b')">Comedy</button>
+    <button onclick="goTo('step2c')">Adventure</button>
+  </div>
+
+  <div class="step" id="step2a">
+    <p>Does your spectacle focus on magic?</p>
+    <button onclick="goTo('step2aa')">Yes</button>
+    <button onclick="goTo('step2ab')">No</button>
+  </div>
+
+<div class="step" id="step2aa">
+    <p>What kind of magic are you looking for?</p>
+    <button onclick="goTo('step2aaa')">Monster Girls</button>
+    <button onclick="goTo('step2aab')">Vampires</button>
+    <button onclick="goTo('step2aac')">Mages/Espers</button>
+  </div>
+
+<div class="step" id="step2aaa">
+    <p>Do you want a ton of J-Pop in your Anime?</p>
+    <button onclick="showResult('result1')">Yes</button>
+    <button onclick="showResult('result2')">No</button>
+  </div>
+<div class="step" id="step2aab">
+    <p>Old School or New School?</p>
+    <button onclick="showResult('result3')">Old School</button>
+    <button onclick="showResult('result4')">New School</button>
+  </div>
+<div class="step" id="step2aac">
+    <p>How do you want your protagonist?</p>
+    <button onclick="showResult('result5')">Bold</button>
+    <button onclick="showResult('result6')">Reserved</button>
+  </div>
+
+<div class="step" id="step2ab">
+    <p>Sword Fights, gun fights, fist fights or no fights?</p>
+    <button onclick="goTo('step2aba')">Swords</button>
+    <button onclick="goTo('step2abb')">Guns</button>
+    <button onclick="goTo('step2abc')">Fists</button>
+    <button onclick="goTo('step2abd')">No fights</button>
+  </div>
+<div class="step" id="step2aba">
+    <p>Something with Samurai?</p>
+    <button onclick="goTo('step2abaa')">Yes</button>
+    <button onclick="goTo('step2abab')">No</button>
+  </div>
+<div class="step" id="step2abaa">
+  <p>Something with supernatural elements?</p>
+  <button onclick="showResult('result7')">Yes</button>
+  <button onclick="showResult('result8')">A bit</button>
+  <button onclick="showResult('result9')">No</button>
+</div>
+
+<div class="step" id="step2abab">
+    <p>How much politics are you looking for?</p>
+    <button onclick="showResult('result10')">A lot</button>
+    <button onclick="showResult('result11')">A fair amount</button>
+  </div>
+<div class="step" id="step2abc">
+  <p>Are you here for superheroes?</p>
+  <button onclick="showResult('result14')">Yes</button>
+  <button onclick="showResult('result15')">No</button>
+</div>
+  <div class="step" id="step2b">
+    <p>Do you want fantasy or modern setting?</p>
+    <button onclick="showResult('result3')">Fantasy</button>
+    <button onclick="showResult('result4')">Modern</button>
+  </div>
+<div class="step" id="step2abb">
+    <p>Do you want smugglers or bounty hunters?</p>
+    <button onclick="showResult('result12')">Smugglers</button>
+    <button onclick="showResult('result13')">Bounty Hunters</button>
+  </div>
+  <!-- Final Results -->
+  <div class="step" id="result1">
+    <h2>Recommendation: Symphogear</h2>
+    <p>A wholesome slice-of-life anime about finding joy in simplicity.</p>
+  </div>
+
+  <div class="step" id="result2">
+    <h2>Recommendation: Magical Girl Lyrical Nanoha</h2>
+    <p>Sweet, chaotic romance between unlikely high schoolers.</p>
+  </div>
+
+  <div class="step" id="result3">
+    <h2>Recommendation: Vampire Hunter D</h2>
+    <p>Dark, epic fantasy filled with mystery and brutal action.</p>
+  </div>
+
+  <div class="step" id="result4">
+    <h2>Recommendation: Hellsing Ultimate</h2>
+    <p>A modern cyberpunk thriller exploring justice and identity.</p>
+  </div>
+  <div class="step" id="result5">
+    <h2>Recommendation: Jujutsu Kaisen</h2>
+    <p>A modern cyberpunk thriller exploring justice and identity.</p>
+    </div>
+    <div class="step" id="result6">
+  <h2>Recommendation: Mob Psycho 100</h2>
+  <p>A modern cyberpunk thriller exploring justice and identity.</p>
+  </div>
+   <div class="step" id="result7">
+  <h2>Recommendation: Demon Slayer</h2>
+  <p>A modern cyberpunk thriller exploring justice and identity.</p>
+  </div>
+   <div class="step" id="result8">
+   <h2>Recommendation: Afro Samurai</h2>
+   <p>A modern cyberpunk thriller exploring justice and identity.</p>
+ </div>
+  <div class="step" id="result9">
+   <h2>Recommendation: Sword of the Stranger</h2>
+   <p>A modern cyberpunk thriller exploring justice and identity.</p>
+ </div>
+
+<div class="step" id="result10">
+   <h2>Recommendation: Attack on Titan</h2>
+   <p>A modern cyberpunk thriller exploring justice and identity.</p>
+ </div>
+<div class="step" id="result11">
+   <h2>Recommendation: Kill la Kill</h2>
+   <p>A modern cyberpunk thriller exploring justice and identity.</p>
+ </div>
+<div class="step" id="result12">
+   <h2>Recommendation: Black Lagoon</h2>
+   <p>A modern cyberpunk thriller exploring justice and identity.</p>
+ </div>
+<div class="step" id="result13">
+   <h2>Recommendation: Gunsmith Cats</h2>
+   <p>A modern cyberpunk thriller exploring justice and identity.</p>
+ </div>
+<div class="step" id="result14">
+   <h2>Recommendation: One Punch Man</h2>
+   <p>A modern cyberpunk thriller exploring justice and identity.</p>
+ </div>
+<div class="step" id="result15">
+   <h2>Recommendation: The God of High School</h2>
+   <p>A modern cyberpunk thriller exploring justice and identity.</p>
+ </div>
+
+  <script>
+    function goTo(stepId) {
+      document.querySelectorAll('.step').forEach(step => step.classList.remove('active'));
+      document.getElementById(stepId).classList.add('active');
+    }
+
+    function showResult(resultId) {
+      goTo(resultId);
+    }
+  </script>
+
+</body>
+</html>
