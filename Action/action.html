@@ -375,6 +375,40 @@
       <button class="back-button" onclick="goTo('step1')">← Back</button>
     </div>
   </div>
+    <!-- Character centric Subpath -->
+        <div class="step" id="cc">
+    <p>How about a sport anime?</p>
+    <div class="button-container">
+      <button onclick="goTo('ccy')">Yes</button>
+      <button onclick="goTo('ccn')">No</button>
+      <button class="back-button" onclick="goTo('step1')">← Back</button>
+    </div>
+  </div>
+    <div class="step" id="ccy">
+    <p>Are you looking for a classic?</p>
+    <div class="button-container">
+      <button onclick="showResult('slam')">Classic</button>
+      <button onclick="showResult('haiyku')">New Classic</button>
+      <button onclick="goTo('lessknown')">Lesser Known</button>
+      <button class="back-button" onclick="goTo('step1')">← Back</button>
+    </div>
+  </div>
+    <div class="step" id="lessknown">
+    <p>Team or solo sport?</p>
+    <div class="button-container">
+      <button onclick="showResult('team')">Team</button>
+      <button onclick="showResult('solo')">Solo</button>
+      <button class="back-button" onclick="goTo('step1')">← Back</button>
+    </div>
+  </div>
+    <div class="step" id="ccn">
+    <p>Something story driven or episodic?</p>
+    <div class="button-container">
+      <button onclick="showResult('sd')">Story Driven</button>
+      <button onclick="showResult('epi')">Episodic</button>
+      <button class="back-button" onclick="goTo('step1')">← Back</button>
+    </div>
+  </div>
 
   <!-- Adventure Path -->
   <div class="step" id="step2c">
@@ -639,20 +673,69 @@
   </div>
   <div class="step" id="result30">
     <div class="result-content">
-      <img src="https://via.placeholder.com/200x300/333/fff?text=Mushishi" alt="Mushishi" class="anime-poster">
-      <p>A meditative journey following Ginko, a "Mushi Master" who travels through rural Japan helping people affected by mysterious elemental creatures invisible to most humans.</p>
-      <button class="restart-button" onclick="goTo('step1')">🔄 Take Quiz Again</button>
-    </div>
-  </div>
-  <div class="step" id="result27">
-    <div class="result-content">
-      <h2>Recommendation: The Irregular at Magic High School</h2>
-      <img src="https://via.placeholder.com/200x300/333/fff?text=Mushishi" alt="Mushishi" class="anime-poster">
-      <p>A meditative journey following Ginko, a "Mushi Master" who travels through rural Japan helping people affected by mysterious elemental creatures invisible to most humans.</p>
-      <button class="restart-button" onclick="goTo('step1')">🔄 Take Quiz Again</button>
-    </div>
-  </div>
+            <h2>Recommendation: Suppose a kid from the Last Dungeon</h2>
 
+      <img src="https://via.placeholder.com/200x300/333/fff?text=" alt="" class="anime-poster">
+      <p></p>
+      <button class="restart-button" onclick="goTo('step1')">🔄 Take Quiz Again</button>
+    </div>
+  </div>
+  <div class="step" id="result28">
+    <div class="result-content">
+      <h2>Recommendation: The Devil is Part Timer</h2>
+      <img src="https://via.placeholder.com/200x300/333/fff?text=Mushishi" alt="Mushishi" class="anime-poster">
+      <p></p>
+      <button class="restart-button" onclick="goTo('step1')">🔄 Take Quiz Again</button>
+    </div>
+  </div>
+  <div class="step" id="slam">
+    <div class="result-content">
+      <h2>Recommendation: Slam Dunk</h2>
+      <img src="https://via.placeholder.com/200x300/333/fff?text=Mushishi" alt="Mushishi" class="anime-poster">
+      <p></p>
+      <button class="restart-button" onclick="goTo('step1')">🔄 Take Quiz Again</button>
+    </div>
+  </div>
+    <div class="step" id="haiyku">
+    <div class="result-content">
+      <h2>Recommendation: Haiyku!!</h2>
+      <img src="https://via.placeholder.com/200x300/333/fff?text=Mushishi" alt="Mushishi" class="anime-poster">
+      <p></p>
+      <button class="restart-button" onclick="goTo('step1')">🔄 Take Quiz Again</button>
+    </div>
+  </div>
+    <div class="step" id="team">
+    <div class="result-content">
+      <h2>Recommendation: Ace of the Diamond</h2>
+      <img src="https://via.placeholder.com/200x300/333/fff?text=Mushishi" alt="Mushishi" class="anime-poster">
+      <p></p>
+      <button class="restart-button" onclick="goTo('step1')">🔄 Take Quiz Again</button>
+    </div>
+  </div>
+    <div class="step" id="solo">
+    <div class="result-content">
+      <h2>Recommendation: Scorching Ping Pong Girls</h2>
+      <img src="https://via.placeholder.com/200x300/333/fff?text=Mushishi" alt="Mushishi" class="anime-poster">
+      <p></p>
+      <button class="restart-button" onclick="goTo('step1')">🔄 Take Quiz Again</button>
+    </div>
+  </div>
+    <div class="step" id="sd">
+    <div class="result-content">
+      <h2>Recommendation: Assassination Classroom</h2>
+      <img src="https://via.placeholder.com/200x300/333/fff?text=Mushishi" alt="Mushishi" class="anime-poster">
+      <p></p>
+      <button class="restart-button" onclick="goTo('step1')">🔄 Take Quiz Again</button>
+    </div>
+  </div>
+    <div class="step" id="epi">
+    <div class="result-content">
+      <h2>Recommendation: Blood Blockade Battlefront</h2>
+      <img src="https://via.placeholder.com/200x300/333/fff?text=Mushishi" alt="Mushishi" class="anime-poster">
+      <p></p>
+      <button class="restart-button" onclick="goTo('step1')">🔄 Take Quiz Again</button>
+    </div>
+  </div>
   <!-- Additional results would follow the same pattern -->
   <!-- For brevity, I've shown 3 sample results -->
   
