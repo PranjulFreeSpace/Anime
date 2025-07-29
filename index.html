@@ -412,15 +412,48 @@
 
   <!-- Adventure Path -->
   <div class="step" id="step2c">
-    <p>What adventure setting appeals to you?</p>
+    <p>What kind of journey do you want?</p>
     <div class="button-container">
-      <button onclick="showResult('result25')">🏰 Fantasy</button>
-      <button onclick="showResult('result26')">🛸 Sci-Fi</button>
-      <button onclick="showResult('result27')">🌍 Real World</button>
+      <button onclick="goTo('norwor')">Normal World</button>
+      <button onclick="goTo('grand')">Grand</button>
+      <button onclick="goTo('superrr')">Supernatural</button>
       <button class="back-button" onclick="goTo('step1')">← Back</button>
     </div>
   </div>
   
+    <div class="step" id="norwor">
+    <p>Who should the characters be?</p>
+    <div class="button-container">
+      <button onclick="goTo('Warriors')">Warriors</button>
+      <button onclick="goTo('Pilots')">Pilots</button>
+      <button onclick="goTo('Criminal')">Criminal</button>
+      <button class="back-button" onclick="goTo('step2c')">← Back</button>
+    </div>
+  </div>
+  <div class="step" id="Warriors">
+    <p>Something set in Europe or Asia?</p>
+    <div class="button-container">
+      <button onclick="showResult('vin')">Europe</button>
+      <button onclick="showResult('king')">Asia</button>
+      <button class="back-button" onclick="goTo('norwor')">← Back</button>
+    </div>
+  </div>
+  <div class="step" id="Pilots">
+    <p>Predominately female or male cast?</p>
+    <div class="button-container">
+      <button onclick="showResult('koto')">Female</button>
+      <button onclick="showResult('88')">Male</button>
+      <button class="back-button" onclick="goTo('norwor')">← Back</button>
+    </div>
+  </div>
+  <div class="step" id="Criminal">
+    <p>Focused on the heists, or life on the run?</p>
+    <div class="button-container">
+      <button onclick="showResult('lupin')">Heists</button>
+      <button onclick="showResult('michiko')">Life on the Run</button>
+      <button class="back-button" onclick="goTo('norwor')">← Back</button>
+    </div>
+  </div>
   <!-- Results -->
   <div class="step" id="result1">
     <div class="result-content">
@@ -729,6 +762,55 @@
     <div class="result-content">
       <h2>Recommendation: Blood Blockade Battlefront</h2>
       <img src="https://via.placeholder.com/200x300/333/fff?text=Mushishi" alt="Mushishi" class="anime-poster">
+      <p></p>
+      <button class="restart-button" onclick="goTo('step1')">🔄 Take Quiz Again</button>
+    </div>
+  </div>
+  
+      <div class="step" id="vin">
+    <div class="result-content">
+      <h2>Recommendation: Vinland Saga</h2>
+      <img src="" alt="" class="anime-poster">
+      <p></p>
+      <button class="restart-button" onclick="goTo('step1')">🔄 Take Quiz Again</button>
+    </div>
+  </div>
+        <div class="step" id="king">
+    <div class="result-content">
+      <h2>Recommendation: Kingdom</h2>
+      <img src="" alt="" class="anime-poster">
+      <p></p>
+      <button class="restart-button" onclick="goTo('step1')">🔄 Take Quiz Again</button>
+    </div>
+  </div>
+        <div class="step" id="koto">
+    <div class="result-content">
+      <h2>Recommendation: The Magnificent Kotobuki</h2>
+      <img src="" alt="" class="anime-poster">
+      <p></p>
+      <button class="restart-button" onclick="goTo('step1')">🔄 Take Quiz Again</button>
+    </div>
+  </div>
+        <div class="step" id="88">
+    <div class="result-content">
+      <h2>Recommendation: Area 88</h2>
+      <img src="" alt="" class="anime-poster">
+      <p></p>
+      <button class="restart-button" onclick="goTo('step1')">🔄 Take Quiz Again</button>
+    </div>
+  </div>
+        <div class="step" id="lupin">
+    <div class="result-content">
+      <h2>Recommendation: Lupin III</h2>
+      <img src="" alt="" class="anime-poster">
+      <p></p>
+      <button class="restart-button" onclick="goTo('step1')">🔄 Take Quiz Again</button>
+    </div>
+  </div>
+        <div class="step" id="michiko">
+    <div class="result-content">
+      <h2>Recommendation: Michiko to Hatchin</h2>
+      <img src="" alt="" class="anime-poster">
       <p></p>
       <button class="restart-button" onclick="goTo('step1')">🔄 Take Quiz Again</button>
     </div>
