@@ -446,14 +446,47 @@
       <button class="back-button" onclick="goTo('norwor')">← Back</button>
     </div>
   </div>
-  <div class="step" id="Criminal">
-    <p>Focused on the heists, or life on the run?</p>
+  <div class="step" id="grand">
+    <p>Have you already seen mainstream anime?</p>
     <div class="button-container">
-      <button onclick="showResult('lupin')">Heists</button>
-      <button onclick="showResult('michiko')">Life on the Run</button>
+      <button onclick="goTo('grandyes')">Yes</button>
+      <button onclick="goTo('grandno')">No</button>
       <button class="back-button" onclick="goTo('norwor')">← Back</button>
     </div>
   </div>
+    <div class="step" id="grandyes">
+    <p>Something old school or new School?</p>
+    <div class="button-container">
+      <button onclick="showResult('fotns')">Fist of the North Star</button>
+      <button onclick="showResult('zach')">Zach Ball</button>
+      <button class="back-button" onclick="goTo('norwor')">← Back</button>
+    </div>
+  </div>
+    <div class="step" id="grandno">
+    <p>Do you want a series that just goes on forever?</p>
+    <div class="button-container">
+      <button onclick="goTo('grandnoyes')">Yes</button>
+      <button onclick="goTo('grandnono')">No</button>
+      <button class="back-button" onclick="goTo('norwor')">← Back</button>
+    </div>
+  </div>
+    <div class="step" id="grandnoyes">
+    <p>Pirates vs. Ninjas. Who you got?</p>
+    <div class="button-container">
+      <button onclick="showResult('onepiece')">One Piece</button>
+      <button onclick="showResult('naruto')">Naruto</button>
+      <button class="back-button" onclick="goTo('norwor')">← Back</button>
+    </div>
+  </div>
+    <div class="step" id="grandnono">
+    <p>Do you want to become insufferable?</p>
+    <div class="button-container">
+      <button onclick="showResult('jjba')">Jojo's Bizzare Adventure</button>
+      <button onclick="showResult('db')">Dragon Ball</button>
+      <button class="back-button" onclick="goTo('norwor')">← Back</button>
+    </div>
+  </div>
+  
   <!-- Results -->
   <div class="step" id="result1">
     <div class="result-content">
